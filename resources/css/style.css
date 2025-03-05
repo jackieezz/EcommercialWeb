@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eee;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    margin: 30px 0;
+}
+
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #42a8c0;
+    box-shadow: -3px 3px 3px 0px rgba(200,200,200, 0.9);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.professional {
+    background-color: white;
+    padding: 40px;
+    margin: 0;
+}
+
+.personal {
+    margin: 0;
+    height: 100%;
+}
+
+.personal-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px 0;
+}
+
+.personal-header img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 160%;
+    font-weight: 900;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+h2 {
+    font-size: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #42a8c0;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.personal-header p {
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 5px auto;
+    text-align: center;
+}
+
+.main-heading {
+    margin-top: 40px;
+}
+
+/* .main-heading p {
+    display: inline-block;
+    color: #42a8c0;
+    font-size: 120%;
+    font-weight: 700;
+    margin-left: 4px;
+} */
+
+.main-heading ion-icon {
+    display: inline-block;
+    background-color: #42a8c0;
+    border: 2px solid #42a8c0;
+    border-radius: 50%;
+    color: white;
+    padding: 2px;
+    font-size: 80%;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.main-desc {
+    font-size: 71%;
+    line-height: 140%;
+    margin-top: 20px;
+}
+
+.personal-details {
+    padding: 20px;
+}
+
+.personal-info {
+    margin-top: 10px;
+}
+
+.personal-info ion-icon {
+    display: inline-block;
+    color: white;
+    width: 30px;
+    text-align: center;
+    font-size: 90%;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.personal-info a {
+    text-decoration: none;
+    color: white;
+    font-size: 80%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90%;
+    color: white;
+    margin-top: 60px;
+    margin-left: 5px;
+}
+
+.personal-ed {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.personal-ed-bold {
+    font-weight: 700;
+    color: white;
+    font-size: 80%;
+    margin-top: 5px;
+}
+
+.personal-ed-bold span {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.personal-ed-light {
+    font-weight: 400;
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 4px;
+}
+
+.exp-head {
+    margin-top: 20px;
+}
+
+.exp-title {
+    font-weight: 700;
+    float: left;
+    font-size: 80%;
+}
+
+.exp-duration {
+    font-weight: 400;
+    opacity: 0.7;
+    float: right;
+    font-size: 70%;
+}
+
+.exp-place {
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 80%;
+    margin-top: 2px;
+}
+
+.exp-desc {
+    font-size: 71%;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
+.exp-items {
+    margin: 10px 30px;
+    margin-bottom: 40px;
+}
+
+.exp-items li {
+    font-size: 71%;
+    margin-top: 5px;
+}
+
+.exp-items li a {
+    text-decoration: none;
+    color: #555;
+    margin-top: 5px;
+}
+
+.exp-projects {
+    margin-top: 20px;
+}
+
+.exp-project {
+    margin-top: 10px;
+}
+
+.exp-project a {
+    display: block;
+    text-decoration: none;
+    color: #42a8c0;
+    font-size: 80%;
+}
+
+.exp-project p {
+    font-size: 75%;
+    line-height: 140%;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills:last-child {
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    margin-top: 10px;
+    height: 20px;
+}
+
+.skill-title {
+    font-size: 75%;
+    font-weight: 700;
+    margin: 0;    
+}
+
+.skill-bg {
+    background: #eee;
+    margin: 0;
+    height: 12px;
+}
+
+.skill-fg {
+    background: #42a8c0;
+    height: 100%;
+}
+
+

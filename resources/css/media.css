@@ -1,0 +1,11 @@
+@media only screen and (max-width: 480px) {
+
+    .exp-duration {
+        font-size: 60%;
+        margin-top: 4px;
+    }
+
+	.skill-title {
+        margin-top: 10px;
+    }
+}
