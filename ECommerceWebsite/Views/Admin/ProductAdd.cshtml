@@ -1,0 +1,54 @@
+﻿@model ECommerceWebsite.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "ProductAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="product-add-body">
+    <div class="product-add-container">
+        <h2 class="form-title">Thêm sản phẩm</h2>
+        <form class="product-add-form" asp-action="ProductAdd" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="productName">Tên sản phẩm:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Giá:</label>
+                <input type="number" id="price" name="price" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả:</label>
+                <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Danh mục:</label>
+                <select id="category" name="category" class="form-control" required>
+                    <option value="" disabled selected>Chọn mục..</option>
+                    <option value="smartwatch">Đồng hồ thông minh</option>
+                    <option value="phone">Điện thoại</option>
+                    <option value="latop">Laptop</option>
+                    <option value="headphones">Tai nghe</option>
+                    <option value="tablet">Máy tính bảng</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image">Ảnh:</label>
+                <input type="file" id="image" name="image" class="form-control" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-submit">Hoàn tất</button>
+            <a href="../Product/ProductList" class="btn-back">Trở về danh sách</a>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

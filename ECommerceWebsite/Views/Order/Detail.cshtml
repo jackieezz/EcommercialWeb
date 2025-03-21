@@ -1,0 +1,77 @@
+﻿@model ECommerceWebsite.Models.OrderViewModel
+
+@{
+    if(User.IsInRole("Admin"))
+	{
+		Layout = "~/Views/Shared/_AdminLayout.cshtml";
+	}
+	else if(User.IsInRole("Customer"))
+        Layout = "~/Views/Shared/_OrderLayout.cshtml";
+}
+
+<div class="order-page-body">
+    <div class="order-page-container">
+        <h4 class="order-page-title">Chi tiết đơn hàng</h4>
+        <hr />
+            <dl class="row order-page-details">
+                <dt class="col-sm-4">Ngày đặt</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.OrderDate)</dd>
+
+                <dt class="col-sm-4">ID:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.userId)</dd>
+
+                <dt class="col-sm-4">Tên:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.name)</dd>
+
+                <dt class="col-sm-4">Địa chỉ:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.address)</dd>
+
+                <dt class="col-sm-4">Sdt:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.phoneNumber)</dd>
+
+                <dt class="col-sm-4">Email:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.email)</dd>
+            </dl>
+
+            <h5 class="order-section-title">Sản phẩm đã đặt</h5>
+            <div class="order-items-list">
+                @foreach (var item in Model.items)
+                {
+                    <div class="order-item">
+                        @if (String.IsNullOrEmpty(item.imgUrl))
+                        {
+                            <img src="~/Assets/default_img.jpg" class="order-item-image" />
+                        }
+                        else
+                        {
+                            <img src="data:image/png;base64,@item.imgUrl" class="order-item-image" />
+                        }
+                        <div class="order-item-details">
+                            <p class="order-item-info">ID: @item.productId</p>
+                            <p class="order-item-info">Giá: $@item.price</p>
+                            <p class="order-item-info">Số lượng: @item.quantity</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <dl class="row order-page-details order-spacing-small">
+                <dt class="col-sm-4">Tổng:</dt>
+                <dd class="col-sm-8">$@Html.DisplayFor(model => model.total)</dd>
+            </dl>
+            <input name="userId" value="@Model.userId" hidden />
+            <div class="order-actions">
+            @{
+                if (User.IsInRole("Admin"))
+                {
+                    <a asp-controller="Order" asp-action="Index" class="goback-btn">Trở về</a>
+                }
+                else if (User.IsInRole("Customer"))
+                {
+                    <a asp-controller="Order" asp-action="History" class="goback-btn">Trở về</a>
+                }
+            }
+               
+            </div>
+    </div>
+</div>

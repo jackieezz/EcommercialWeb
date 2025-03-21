@@ -1,0 +1,173 @@
+﻿@model ViewModelBase
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - ECommerceWebsite</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/ECommerceWebsite.styles.css" asp-append-version="true" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+	<nav>
+		<div id="navbar">
+			<div id="navbar-logo">
+				<a href="../Home/Index">
+					<img src="~/Assets/jk_logo1.png" alt="JkTech"  />
+				</a>
+			</div>
+			<div id="navbar-links">
+				<ul>
+					<li><a href="../Home/Index">Trang Chủ</a></li>
+					<li><a href="../Product/ProductList">Sản phẩm</a></li>
+					<li><a href="#footer-top">Liên hệ</a></li>
+					<li><a href="#">Thông tin</a></li>
+					@{
+						if (User?.Identity?.IsAuthenticated ?? false)
+						{
+							<!-- User Dropdown with only Logout option -->
+							<li class="nav-item-dropdown">
+								<a href="#" class="dropdown-toggle" id="userDropdown">
+									<u>@User.Identity.Name</u>
+								</a>
+								<div class="dropdown-menu">
+									@if(User.IsInRole("Admin"))
+									{
+										<a asp-controller="Admin" asp-action="ProductList" class="order-button">Admin<i class="bi bi-person-circle"></i></a>
+									}
+									<a asp-controller="Order" asp-action="History" class="order-button">Lịch sử<i class="bi bi-bag-check"></i></a>
+									<a asp-controller="Account" asp-action="Logout" class="logout-button">Đăng xuất<i class="bi bi-box-arrow-in-right"></i></a>
+								</div>
+							</li>
+						}
+					}
+				</ul>
+				@{
+					if (!(User?.Identity?.IsAuthenticated ?? false))
+					{
+						<a href="../Account/Login">
+							<button class="blue-button">Mua hàng</button>
+						</a>
+					}
+				}
+				@if (User?.Identity?.IsAuthenticated ?? false)
+				{
+					<div id="navbar-tools">
+						<a id="cart-link" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+								<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+							</svg>
+							<span>
+								@{
+									var itemCount = 0;
+									if (Model?.cartViewModel != null)
+										itemCount = Model.cartViewModel.Count();
+								}
+								@itemCount
+							</span>
+						</a>
+					</div>
+				}
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- Offcanvas giỏ hàng -->
+	@{
+		if (Model != null)
+		{
+			@Html.RenderPartialAsync("_CartOffCanvas", Model.cartViewModel)
+		}
+	}
+	<!--End Navbar -->
+
+	<div class="container">
+		<main role="main">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer>
+		<div id="footer-top">
+			<img src="~/Assets/jk_logo1.png" alt="JkTech" width="220px" height="220px" />
+			<div id="footer-socials-wrapper">
+				<div class="footer-social">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+						<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+					</svg>
+					<span>012 345 6789</span>
+				</div>
+				<div class="footer-social">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+						<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+					</svg>
+					<span>
+						Telegram
+					</span>
+				</div>
+				<div class="footer-social">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+						<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+					</svg>
+					<span>Twitter</span>
+				</div>
+			</div>
+		</div>
+		<div id="footer-bottom">
+			<ul>
+				<li>
+					<a href="#">Trang chủ</a>
+				</li>
+				<li>
+					<a href="#">Sản phẩm</a>
+				</li>
+				<li>
+					<a href="#footer-top">Liên hệ</a>
+				</li>
+				<li>
+					<a href="#">Thông tin</a>
+				</li>
+			</ul>
+			<p>
+				Bản quyền © 2024 JkTech. All rights reserved.
+			</p>
+		</div>
+	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const userDropdown = document.getElementById("userDropdown");
+			const dropdown = document.querySelector(".nav-item-dropdown");
+
+			userDropdown.addEventListener("click", function (event) {
+				event.preventDefault();
+				dropdown.classList.toggle("show");
+			});
+
+			// Close the dropdown if clicked outside
+			document.addEventListener("click", function (event) {
+				if (!dropdown.contains(event.target) && event.target !== userDropdown) {
+					dropdown.classList.remove("show");
+				}
+			});
+		});
+
+	</script>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME"
+				  chat-title="Jktech Bot"
+				  agent-id="88ad38ee-c4a6-4a37-bbe0-0c9f6d107d5f"
+				  language-code="en"></df-messenger>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

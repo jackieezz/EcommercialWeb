@@ -1,0 +1,63 @@
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Domain.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Services.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Services.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Domain.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Domain.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Services.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Services.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Domain.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Domain.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Services.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Services.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Domain.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Persistence\obj\Debug\net8.0\ref\Persistence.dll

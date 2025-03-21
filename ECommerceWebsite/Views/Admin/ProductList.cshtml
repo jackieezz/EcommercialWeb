@@ -1,0 +1,112 @@
+﻿@model ECommerceWebsite.Models.AdminProductViewModel
+
+@{
+    ViewData["Title"] = "ProductList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div id="admin-productlist-body">
+    <h1>Danh sách sản phẩm</h1>
+
+    <div id="search-container">
+        <form asp-action="ProductList" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Tìm Sản phẩm..." id="search-bar" />
+            <button type="submit" id="search-button">Tìm</button>
+        </form>
+    </div>
+
+    <p>
+        <a asp-action="ProductAdd" class="btn btn-primary mb-3">Tạo mới</a>
+    </p>
+
+    <table id="product-table" class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Danh mục</th>
+                <th>Giá</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model._products)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.productId)</td>
+                    <td>
+                        @if(String.IsNullOrEmpty(item.imageUrl))
+                        {
+                            <img src="~/Assets/default_img.jpg" class="img-thumbnail" style="width: 50px; height: 50px;" />
+                        }
+                        else
+                        {
+                            <img src="data:image/png;base64,@item.imageUrl" class="img-thumbnail" style="width: 50px; height: 50px;" />
+                        }
+                        
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.description)</td>
+                    <td>@Html.DisplayFor(modelItem => item.category)</td>
+                    <td>@Html.DisplayFor(modelItem => item.price)$</td>
+                    <td>
+                        <a asp-action="ProductEdit" asp-route-productId="@item.productId" method="POST" class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil-fill"></i>
+                        </a>
+                        <form asp-action="ProductDelete" asp-route-id="@item.productId" method="POST">
+                            <a href="javascript:;" onclick="this.parentNode.submit()" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash-fill"></i>
+                                </a>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center">
+        <ul id="pagination" class="pagination"></ul>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var pageSize = 10;
+        var currentPage = 1;
+        var totalRows = $('#product-table tbody tr').length;
+        var totalPages = Math.ceil(totalRows / pageSize);
+        
+        function showPage(page) {
+            currentPage = page;
+            $('#product-table tbody tr').hide(); 
+            var start = (page - 1) * pageSize;
+            var end = start + pageSize;
+            $('#product-table tbody tr').slice(start, end).show(); 
+            updatePagination();
+        }
+        
+        function updatePagination() {
+            $('#pagination').empty(); 
+            for (var i = 1; i <= totalPages; i++) {
+                var activeClass = (i === currentPage) ? 'active' : '';
+                $('#pagination').append('<li class="page-item ' + activeClass + '"><a class="page-link" href="#">' + i + '</a></li>');
+            }
+            
+            $('#pagination .page-link').click(function (e) {
+                e.preventDefault();
+                var page = parseInt($(this).text());
+                showPage(page);
+            });
+        }
+
+        showPage(1);
+    });
+</script>
+
+

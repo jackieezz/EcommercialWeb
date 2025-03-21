@@ -1,0 +1,52 @@
+﻿@model ECommerceWebsite.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="user-edit-container-body">
+    <div class="user-edit-container">
+        <h1>Chính sửa người dùng</h1>
+        <div class="edit-user-row">
+            <div class="edit-user-form-container">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="edit-validation-summary text-danger"></div>
+
+                    <div class="edit-user-group">
+                        <label asp-for="Name" class="edit-label"for="Name">Tên</label>
+                        <input asp-for="Name" class="edit-input" />
+                        <span asp-validation-for="Name" class="edit-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="edit-user-group">
+                        <label asp-for="Email" class="edit-label"></label>
+                        <input asp-for="Email" class="edit-input" />
+                        <span asp-validation-for="Email" class="edit-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="edit-user-group">
+                        <label asp-for="PhoneNumber" class="edit-label"for="PhoneNumber">Sđt</label>
+                        <input asp-for="PhoneNumber" class="edit-input" />
+                        <span asp-validation-for="PhoneNumber" class="edit-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="edit-user-group">
+                        <label asp-for="Password" class="edit-label"for="Password">Mật khẩu</label>
+                        <input asp-for="Password" class="edit-input" type="password" />
+                        <span asp-validation-for="Password" class="edit-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="edit-submit-group">
+                        <input type="submit" value="Lưu" class="edit-submit-button" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

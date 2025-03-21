@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|c:\\users\\asus\\desktop\\ecommercialwebsite c#\\ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|solutionrelative:ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|c:\\users\\asus\\desktop\\ecommercialwebsite c#\\ecommercewebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|solutionrelative:ecommercewebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T16:17:44.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\appsettings.json",
+              "RelativeDocumentMoniker": "ECommerceWebsite\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\appsettings.json",
+              "RelativeToolTip": "ECommerceWebsite\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T03:41:07.554Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

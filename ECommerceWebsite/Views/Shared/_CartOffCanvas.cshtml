@@ -1,0 +1,194 @@
+﻿@model IEnumerable<ECommerceWebsite.Models.CartItemViewModel>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Cart</h5>
+        <form method="post" asp-controller="Cart" asp-action="ClearCart">
+            <button type="submit" class="btn btn-outline-danger w-100" id="clearCartButton" onclick="clearCart()">Clear Cart</button>
+        </form>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="cart-items" style="max-height: 500px;">
+            @{
+                decimal total = 0;
+                decimal quantity;
+                if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        quantity = item.quantity;
+                        total += item.price * item.quantity;
+                            <div class="cart-item d-flex align-items-center mb-3 position-relative" id="cart-item-@item.productId">
+                                @if (String.IsNullOrEmpty(item.imgUrl))
+                            {
+                                    <img src="~/Assets/default_img.jpg" class="cart-item-image me-3" />
+                            }
+                            else
+                            {
+                                    <img src="data:image/png;base64,@item.imgUrl" class="cart-item-image me-3" />
+                            }
+                                <div class="cart-item-details flex-grow-1">
+                                    <h6 class="cart-item-title mb-0">@item.name</h6>
+                                    <p class="cart-item-id text-muted small mb-0">ID: @item.productId</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <div class="cart-item-price" data-price="@item.price">Price: @item.price$</div>
+                                        <div class="cart-item-quantity">
+                                        @*<button class="btn btn-sm btn-outline-secondary quantity-btn" onclick="updateQuantity('@item.productId', -1)">-</button>*@
+                                            <span class="mx-2 quantity-value">Quantity: @item.quantity</span>
+                                            @*<button class="btn btn-sm btn-outline-secondary quantity-btn" onclick="updateQuantity('@item.productId', 1)">+</button>*@
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Remove" style="font-size: 0.8rem;" onclick="removeCartItem('@item.productId','@item.name')"></button>
+
+                            </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div class="offcanvas-footer p-3 border-top">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold">Total:</span>
+            <span class="fw-bold" id="cart-total">@total$</span>
+        </div>
+        <div class="d-flex flex-column gap-2">
+            @*<div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary w-100" id="saveCartButton" onclick="saveCart()">Save</button>
+                <form method="post" asp-controller="Cart" asp-action="ClearCart">
+                    <button type="submit" class="btn btn-outline-danger w-100" id="clearCartButton" onclick="clearCart()">Clear Cart</button>
+                </form>
+            </div>*@
+             <form method="get" asp-controller="Order" asp-action="Create">
+                <button type="submit" class="btn btn-primary w-100 bg-blue mt-2" onclick="confirmPayout()">Payout</button>
+             </form>
+        </div>
+    </div>
+
+    <div id="notificationContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+</div>
+
+<script>
+    function updateQuantity(productId, change) {
+        const cartItem = document.getElementById(`cart-item-${productId}`);
+        const quantityElement = cartItem.querySelector('.quantity-value');
+        const priceElement = cartItem.querySelector('.cart-item-price');
+
+        let currentQuantity = parseInt(quantityElement.textContent);
+        let price = parseFloat(priceElement.getAttribute('data-price'));
+
+        const newQuantity = currentQuantity + change;
+
+        if (newQuantity < 1) {
+            showNotification("Quantity cannot be less than 1");
+            return;
+        }
+
+        quantityElement.textContent = newQuantity;
+
+        // Vô hiệu hóa nút giảm khi số lượng <= 1
+        const minusButton = cartItem.querySelector('.quantity-btn:first-child');
+        minusButton.disabled = newQuantity <= 1;
+
+        updateTotalPrice();
+        showNotification(`Updated quantity for product ID ${productId} to ${newQuantity}`);
+    }
+
+
+    function updateTotalPrice() {
+        let total = 0;
+        const cartItems = document.querySelectorAll('.cart-item');
+
+        cartItems.forEach(item => {
+            const price = parseFloat(item.querySelector('.cart-item-price').getAttribute('data-price'));
+            const quantity = parseInt(item.querySelector('.quantity-value').textContent);
+            total += price * quantity;
+        });
+
+        document.getElementById('cart-total').textContent = total.toFixed(2) + '$';
+    }
+
+    function showNotification(message) {
+        const notificationContainer = document.getElementById('notificationContainer');
+        const notification = document.createElement('div');
+        notification.classList.add('toast-notification', 'show');
+        notification.innerText = message;
+        notificationContainer.appendChild(notification);
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+
+    function clearCart() {
+        const cartItems = document.querySelector('.cart-items');
+        cartItems.innerHTML = '';
+        document.getElementById('cart-total').textContent = '0$';
+        updateCartCount();
+        showNotification("Cart cleared successfully!");
+    }
+
+    function updateCartCount() {
+        const cartItems = document.querySelectorAll('.cart-item');
+        const cartCountElement = document.querySelector('#cart-link span');
+        if (cartCountElement) {
+            cartCountElement.textContent = cartItems.length.toString();
+        }
+    }
+
+    function removeCartItem(productId,productName) {
+        const cartItem = document.getElementById(`cart-item-${productId}`);
+        cartItem.remove();
+        updateTotalPrice();
+        updateCartCount();
+        showNotification(`Product ${productName} removed from the cart.`);
+
+        const cartItems = document.querySelectorAll('.cart-item');
+        if (cartItems.length === 0) {
+            document.getElementById('cart-total').textContent = '0$';
+        }
+        $.ajax({
+            url: '/Cart/DeleteItem',
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            dataType: 'json',
+            data: JSON.stringify(productId), // Pass the string directly
+            success: function (response) {
+                console.log('Item deleted successfully:', response);
+            },
+            error: function (error) {
+                console.error('Error deleting item:', error);
+            }
+        });
+    }
+
+    function saveCart() {
+        showNotification("Cart saved successfully!");
+    }
+
+    function confirmPayout() {
+        const saveFirst = confirm("Would you like to save your cart before proceeding to payout?");
+        if (saveFirst) saveCart();
+        showNotification("Proceeding to payout...");
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const cartItems = document.querySelectorAll('.cart-item');
+
+        cartItems.forEach(cartItem => {
+            const quantityElement = cartItem.querySelector('.quantity-value');
+            const minusButton = cartItem.querySelector('.quantity-btn:first-child');
+            const quantity = parseInt(quantityElement.textContent);
+
+            // Vô hiệu hóa nút giảm nếu số lượng <= 1
+            minusButton.disabled = quantity <= 1;
+        });
+
+        updateCartCount();
+        updateTotalPrice();
+    });
+
+</script>

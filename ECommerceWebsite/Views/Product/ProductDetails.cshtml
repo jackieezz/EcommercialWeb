@@ -1,0 +1,177 @@
+﻿@model ProductViewModel
+
+@{
+	ViewData["Title"] = "ProductDetails";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="product-details-body">
+	<!--PRODUCT DETAILS-->
+	<div class="product-details-container">
+		<div class="product-image">
+			@* <img src="~/Assets/topwatch.png" alt="Product Image"> *@
+			<img src="data:image/png;base64,@Model.imageUrl" class="img-thumbnail" style="max-width: 100%; height: auto;" />
+		</div>
+		<div class="product-info">
+			<h1 class="product-title">@Html.DisplayFor(modelItem => modelItem.name)</h1>
+			<p class="product-description">@Html.DisplayFor(modelItem => modelItem.description)</p>
+			<div class="product-price">@Html.DisplayFor(modelItem => modelItem.price)$</div>
+			<form method="post" asp-controller="Cart" asp-action="Add">
+				<input type="hidden" name="productId" value="@Model.productId" />
+				<div class="product-quantity">
+					<label for="quantity">Quantity:</label>
+					<input type="number" name="quantity" value="1" min="1" asp-route-quantity="">
+				</div>
+				<button type="submit" id="blue-button-card">
+					Thêm vào giỏ hàng
+				</button>
+			</form>
+		</div>
+	</div>
+	<!--END PRODUCT DETAILS-->
+	<!--PRODUCT DETAILS SECTION-->
+	<div class="product-section" id="product-section-all">
+		<div class="product-section-top-container">
+			<div class="section-category-container">
+				<div class="section-category-type">
+					<span class="blue-line"></span>
+					<span class="section-category-text">Tất cả sản phẩm công nghệ</span>
+				</div>
+				<h1>Khám phá thêm</h1>
+			</div>
+		</div>
+	</div>
+	<!--END PRODUCT DETAILS SECTION-->
+	<!-- PRODUCT SLIDER SECTION -->
+	<div class="product-link">
+		<a id="allproduct-link" href="../Product/ProductList">Xem tất cả</a>
+	</div>
+
+	<div class="product-slider-container">
+		<div class="product-slider">
+			<!-- Product Card 1 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/ipad.png" alt="Product 1">
+				</div>
+				<div class="product-card-title">Máy tính bảng</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 2 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/topwatch.png" alt="Product 2">
+				</div>
+				<div class="product-card-title">Đồng hồ điện tử thể dục</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 3 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/01.png" alt="Product 3">
+				</div>
+				<div class="product-card-title">Đồng hồ thể thao</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 4 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/02.png" alt="Product 4">
+				</div>
+				<div class="product-card-title">Imac</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 4 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/03.png" alt="Product 4">
+				</div>
+				<div class="product-card-title">Tai nghe hồng</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua Ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 4 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/04.png" alt="Product 4">
+				</div>
+				<div class="product-card-title">Tai nghe tím</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Card 4 -->
+			<div class="product-card">
+				<div class="product-card-image">
+					<img src="~/Assets/06.png" alt="Product 4">
+				</div>
+				<div class="product-card-title">Đồng hồ quân đội</div>
+				<div class="product-purchase">
+					<span class="product-price">450.000</span>
+					<button class="blue-button best-seller">
+						<a href="../Product/ProductList">Mua ngay</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDER NAVIGATION BUTTON -->
+		<div class="slider-buttons">
+			<button class="slider-button" onclick="slideLeft()">←</button>
+			<button class="slider-button" onclick="slideRight()">→</button>
+		</div>
+	</div>
+	<!-- END PRODUCT SLIDER SECTION -->
+</div>
+
+<script>
+	const slider = document.querySelector('.product-slider');
+	const cardWidth = 300;
+
+	function slideLeft() {
+		slider.scrollBy({
+			left: -cardWidth,
+			behavior: 'smooth'
+		});
+	}
+
+	function slideRight() {
+		slider.scrollBy({
+			left: cardWidth,
+			behavior: 'smooth'
+		});
+	}
+</script>

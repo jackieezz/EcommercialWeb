@@ -1,0 +1,33 @@
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\bin\Debug\net8.0\Shared.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\refint\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Shared\obj\Debug\net8.0\ref\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\bin\Debug\net8.0\Shared.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\refint\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Shared\obj\Debug\net8.0\ref\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\bin\Debug\net8.0\Shared.deps.json
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\refint\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Shared\obj\Debug\net8.0\ref\Shared.dll

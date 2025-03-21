@@ -1,0 +1,45 @@
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.E74F1EB6.Up2Date
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\refint\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite-master\Services.Abstractions\obj\Debug\net8.0\ref\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.deps.json
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.E74F1EB6.Up2Date
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\refint\Services.Abstractions.dll
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Downloads\ECommerceWebsite\Services.Abstractions\obj\Debug\net8.0\ref\Services.Abstractions.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.deps.json
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\bin\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.E74F1EB6.Up2Date
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\refint\Services.Abstractions.dll
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\Services.Abstractions.pdb
+C:\Users\ASUS\Desktop\EcommercialWebsite c#\Services.Abstractions\obj\Debug\net8.0\ref\Services.Abstractions.dll

@@ -1,0 +1,164 @@
+﻿@model AllProductsViewModel
+
+@{
+	ViewData["Title"] = "AllProducts";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!--MAIN BODY-->
+<div id="product-page-body">
+	<!--TOP SECTION-->
+	<div id="product-top-container">
+		<div id="product-top-wrapper">
+			<div id="product-top-text-section">
+				<h1>Trend mới nhất</h1>
+				<h2>Tai nghe không dây</h2>
+				<p>
+					Gọn nhẹ, tinh  tế, thoải mái
+				</p>
+				<a href="../Account/Login">
+					<button class="blue-button">
+						MUA NGAY
+					</button>
+				</a>
+			</div>
+			<div id="product-top-image-section">
+				<img src="~/Assets/top_image.png" />
+			</div>
+		</div>
+	</div><!--END TOP SECTION-->
+	<!--PRODUCT CATEGORIES-->
+
+	<!--PRODUCT CARDS-->
+	<div class="product-section" id="product-section-all">
+		<div class="product-section-top-container">
+			<div class="section-category-container">
+				<div class="section-category-type">
+					<span class="blue-line"></span>
+					<span class="section-category-text">Tất cả sản phẩm điện tử</span>
+				</div>
+				<h1>Hãy khám phá sản phẩm yêu thích của bạn</h1>
+			</div>
+		</div>
+
+		<!--SEARCH BAR-->
+		<div id="search-container">
+			<form asp-action="ProductList" method="get" id="search-form">
+				<input type="text" name="query" placeholder="Tìm sản phẩm..." id="search-bar" />
+				<button type="submit" id="search-button">Tìm</button>
+			</form>
+		</div>
+
+
+		<div class="product-cards-container">
+			<ul>
+				@foreach (var item in Model.products)
+				{
+					<li class="product-card">
+						<a asp-action="ProductDetails" asp-route-productId="@item.productId" class="product-link">
+							<div class="product-image-container">
+								@if (String.IsNullOrEmpty(item.imageUrl))
+								{
+									<img src="~/Assets/default_img.jpg" class="img-thumbnail" />
+								}
+								else
+								{
+									<img src="data:image/png;base64,@item.imageUrl" class="img-thumbnail" style="max-width: 100%; height: auto;" />
+								}
+							</div>
+							<div class="product-text-container">
+								<h1>@Html.DisplayFor(modelItem => item.name)</h1>
+								<div class="product-purchase">
+									<span class="product-price">@Html.DisplayFor(modelItem => item.price)$</span>
+									<form method="post" asp-controller="Cart" asp-action="Add" asp-route-productId="@item.productId" asp-route-quantity="1">
+										<button type="submit" id="blue-button-card">
+											Thêm vào giỏ hàng
+										</button>
+									</form>
+								</div>
+							</div>
+						</a>
+					</li>
+				}
+			</ul>
+		</div>
+		<!-- Pagination buttons -->
+		<div class="pagination-container">
+			<button id="prev" disabled>Trước</button>
+			<span id="page-info">Page 1</span>
+			<button id="next">Sau</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const productsPerPage = 6;
+		const productList = document.querySelectorAll('.product-card');
+		const totalProducts = productList.length;
+		let currentPage = 1;
+
+
+		function displayPage(page) {
+			const start = (page - 1) * productsPerPage;
+			const end = start + productsPerPage;
+
+			productList.forEach((product, index) => {
+				product.style.display = 'none';
+			});
+
+			for (let i = start; i < end && i < totalProducts; i++) {
+				productList[i].style.display = 'block';
+			}
+			document.getElementById('page-info').innerText = `Page ${currentPage}`;
+			document.getElementById('prev').disabled = currentPage === 1;
+			document.getElementById('next').disabled = end >= totalProducts;
+		}
+
+		document.getElementById('prev').addEventListener('click', function () {
+			if (currentPage > 1) {
+				currentPage--;
+				displayPage(currentPage);
+			}
+		});
+
+		document.getElementById('next').addEventListener('click', function () {
+			if ((currentPage * productsPerPage) < totalProducts) {
+				currentPage++;
+				displayPage(currentPage);
+			}
+		});
+
+		displayPage(currentPage);
+	});
+
+	// document.querySelectorAll('.blue-button').forEach(button => {
+	// 	button.addEventListener('click', function (event) {
+	// 		event.preventDefault();
+	// 	});
+	// });
+
+	$(document).ready(function () {
+		$('.add-to-cart').click(function () {
+			var productId = $(this).data('product-id');
+			var quantity = $(this).data('quantity');
+
+			$.ajax({
+				url: '@Url.Action("Add", "Cart")',
+				type: 'POST',
+				data: { productId: productId, quantity: quantity },
+				success: function (response) {
+					console.log('Product added to cart!');
+				},
+				error: function (xhr, status, error) {
+					console.log('Failed to add product to cart: ' + error);
+				}
+			});
+		});
+	});
+
+</script>
+
+
+

@@ -1,0 +1,50 @@
+﻿@model ECommerceWebsite.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "ProductEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="product-edit-body">
+    <div class="product-edit-container">
+        <h2 class="form-title">Sửa sản phẩm</h2>
+        <form class="product-edit-form" asp-action="ProductEdit" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="name">Tên sản phẩm:</label>
+                <input type="text" id="name" name="name" class="form-control" value="@Model.name" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Giá:</label>
+                <input type="number" id="price" name="price" class="form-control" value="@Model.price" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả:</label>
+                <input id="description" name="description" class="form-control" rows="4" value="@Model.description" required></input>
+            </div>
+            <div class="form-group">
+                <label for="category">Danh mục:</label>
+                <select id="category" name="category" class="form-control" required>
+                    <option value="" disabled selected>Chọn mục..</option>
+                    <option value="smartwatch">Đồng hồ thông minh</option>
+                    <option value="phone">Điện thoại</option>
+                    <option value="laptop">Laptop</option> 
+                    <option value="headphones">Tai nghe</option>
+                    <option value="tablet">Máy tính bảng</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image">Hình:</label>
+                <input type="file" id="image" name="image" class="form-control" accept="image/*" required>
+            </div>
+            <img src="data:image/png;base64,@Model.imageUrl" class="img-thumbnail" style="max-width: 100%; height: auto;" />
+
+            <button type="submit" class="btn-submit">Hoàn tất</button>
+            <a href="../Product/ProductList" class="btn-back">Trở lại danh sách</a>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,60 @@
+﻿@model OrderDetailViewModel
+@{
+
+	ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="order-history-page-body">
+    <div class="order-history-page-container">
+        <h2 class="text-center mb-4">Danh sách đặt hàng</h2>
+        <table class="order-history-table">
+            <thead>
+                <tr>
+                    <th class="order-history-cell">Ngày đặt</th>
+                    <th class="order-history-cell">ID người dùng</th>
+                    <th class="order-history-cell">Tên</th>
+                    <th class="order-history-cell">Địa chỉ</th>
+                    <th class="order-history-cell">Số điện thoại</th>
+                    <th class="order-history-cell">Email</th>
+                    <th class="order-history-cell">Tổng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @* @foreach (var item in Model.orders)
+                {
+                    <tr>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.OrderDate)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.userId)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.name)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.address)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.phoneNumber)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.email)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.total)$</td>
+                        <td class="order-history-cell">
+                            <a asp-action="Detail" asp-route-id="@item.orderId" class="btn btn-primary">View</a>
+                        </td>
+                    </tr>
+                } *@
+                @for (var i = Model.orders.Count; i>0 ; i--)
+
+                {
+                    var item = Model.orders[i-1];
+                    <tr>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.OrderDate)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.userId)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.name)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.address)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.phoneNumber)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.email)</td>
+                        <td class="order-history-cell">@Html.DisplayFor(modelItem => item.total)$</td>
+                        <td class="order-history-cell">
+                            <a asp-action="Detail" asp-route-id="@item.orderId" class="btn btn-primary">Xem</a>
+                        </td>
+                    </tr>
+                }
+               
+            </tbody>
+        </table>
+    </div>
+</div>

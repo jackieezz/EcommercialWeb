@@ -1,0 +1,103 @@
+﻿@model ECommerceWebsite.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+@* <div id="user-create-container-body">
+    <div class="user-create-container">
+        <h1>Create User</h1>
+
+        <div class="create-user-row">
+            <div class="create-user-form-container">
+                @if (ViewBag.Message != null)
+                {
+                        <div class="create-message bg-success text-white">@ViewBag.Message</div>
+                }
+
+                <form asp-action="SignUp">
+                    <div asp-validation-summary="ModelOnly" class="create-validation-summary text-danger"></div>
+
+                    <div class="create-user-group">
+                        <label asp-for="Name" class="create-label"></label>
+                        <input asp-for="Name" class="create-input" />
+                        <span asp-validation-for="Name" class="create-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="create-user-group">
+                        <label asp-for="Email" class="create-label"></label>
+                        <input asp-for="Email" class="create-input" />
+                        <span asp-validation-for="Email" class="create-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="create-user-group">
+                        <label asp-for="PhoneNumber" class="create-label"></label>
+                        <input asp-for="PhoneNumber" class="create-input" />
+                        <span asp-validation-for="PhoneNumber" class="create-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="create-user-group">
+                        <label asp-for="Password" class="create-label"></label>
+                        <input asp-for="Password" class="create-input" type="password" />
+                        <span asp-validation-for="Password" class="create-validation-message text-danger"></span>
+                    </div>
+
+                    <div class="create-submit-group">
+                        <input type="submit" value="Create" class="create-submit-button" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> *@
+
+
+
+<div id="signup-container-body">
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Create Account</h1>
+            <p>Please fill in your details to create your account</p>
+        </div>
+        <form asp-action="SignUp">
+            <div class="form-group">
+                <label asp-for="Name"> Name</label>
+                <input asp-for="Name" type="text" id="fullname" placeholder="Enter your full name" required>
+                <span asp-validation-for="Name" class="create-validation-message text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" type="email" id="email" placeholder="name@example.com" required>
+                <span asp-validation-for="Email" class="create-validation-message text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber">Phone Number</label>
+                <input asp-for="PhoneNumber" placeholder="Phone Number" required>
+                <span asp-validation-for="PhoneNumber" class="create-validation-message text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" type="password" id="password" placeholder="Password" required>
+                <span asp-validation-for="Password" class="create-validation-message text-danger"></span>
+            </div>
+            <div class="login-link">
+                Already have an account? <a href="../Account/Login">Sign in!</a>
+            </div>
+            @if (ViewBag.Message != null)
+            {
+                @if (ViewBag.Message == "User Created Successfully")
+                {
+                    <div class="create-message bg-success text-white">
+                        ViewBag.Message
+                    </div>
+                }
+                else
+                {
+                    <div class="create-message bg-danger text-white">@ViewBag.Message</div>
+                }
+            }
+            <button type="submit" class="signup-button">Create Account</button>
+        </form>
+    </div>
+</div>
