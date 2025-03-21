@@ -61,6 +61,21 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-19T03:41:07.554Z",
               "EditorCaption": ""
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Persistence.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Persistence\\Persistence.csproj",
+              "RelativeDocumentMoniker": "Persistence\\Persistence.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Persistence\\Persistence.csproj",
+              "RelativeToolTip": "Persistence\\Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-19T03:40:39.959Z"
+>>>>>>> 72fa718 (init Ecommercial)
             }
           ]
         }
