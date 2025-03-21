@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "671d1bc34b4d37379aec51f7"
+  },
+  "Name": "adf",
+  "NormalizedName": "ADF",
+  "ConcurrencyStamp": "1a750861-7d54-4ab0-b30f-678268ecc120",
+  "Version": 1,
+  "Claims": []
+},
+{
+  "_id": {
+    "$oid": "671cec652167addca73399b3"
+  },
+  "Name": "Customer",
+  "NormalizedName": "CUSTOMER",
+  "ConcurrencyStamp": "1b56c403-e597-463b-b276-73e0721c8abc",
+  "Version": 1,
+  "Claims": []
+},
+{
+  "_id": {
+    "$oid": "671cec5e2167addca73399b2"
+  },
+  "Name": "Admin",
+  "NormalizedName": "ADMIN",
+  "ConcurrencyStamp": null,
+  "Version": 1,
+  "Claims": []
+}]

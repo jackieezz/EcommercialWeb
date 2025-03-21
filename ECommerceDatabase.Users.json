@@ -1,0 +1,217 @@
+[{
+  "_id": {
+    "$oid": "671cf03fe927689c4878ae5e"
+  },
+  "UserName": "admin",
+  "NormalizedUserName": "ADMIN",
+  "Email": "admin@gmail.com",
+  "NormalizedEmail": "ADMIN@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAELXqKci4NimmS3OO+O86kmp+17KKADffA+kgZSJ7EdC3WnQL/TCK6h1VtcmMi5adwA==",
+  "SecurityStamp": "7EZS4G74YHO7HHIB6SNCGGXPVOUCZXMB",
+  "ConcurrencyStamp": "fcbb7857-a0ab-4768-87a3-9f2842046a5a",
+  "PhoneNumber": null,
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-10-26T13:35:59.641Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec5e2167addca73399b2"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "6745625c757380b7483b3611"
+  },
+  "UserName": "TestUser",
+  "NormalizedUserName": "TESTUSER",
+  "Email": "id.edumail@gmail.com",
+  "NormalizedEmail": "ID.EDUMAIL@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEP1YvZgPORiXa/87W+2sT8tbjhLAQnWsKl4PMNms/LrCugqS2WC2by9Q3jdjSBRDsA==",
+  "SecurityStamp": "LINXC6WPJQ2REECW572TMP65UUFHVIVB",
+  "ConcurrencyStamp": "b7fcd018-2c6c-4d35-a667-6089ed6b8d25",
+  "PhoneNumber": "1234567890",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-11-26T05:53:32.592Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "6765985e6b3c098f40438352"
+  },
+  "UserName": "Hello",
+  "NormalizedUserName": "HELLO",
+  "Email": "456@gmail.com",
+  "NormalizedEmail": "456@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEBtTUVNVl+w3+sEbTVVtonNV4lfzDqfNSe+amzQI4Xl24TnvAiAY6UnMFhxz2tAmZg==",
+  "SecurityStamp": "X5NIGCVXQVIZB4I4QBOIQ3ZMWUVS2WOW",
+  "ConcurrencyStamp": "086800b2-50d4-485f-96aa-b606a1849c69",
+  "PhoneNumber": "123456789",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-12-20T16:16:30.063Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "672084f91c0af2ab2590bf08"
+  },
+  "UserName": "asdf",
+  "NormalizedUserName": "ASDF",
+  "Email": "asdf@gmail.com",
+  "NormalizedEmail": "ASDF@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEABlUycCYmMzYefK0xl/qqyZ1iVnPcmOlrxcdDbn2xdCNAEA7O2LVsg09Ced4AE5RA==",
+  "SecurityStamp": "CDEYXIV75VPQMYIFLDFBGCBW4LQDPCI6",
+  "ConcurrencyStamp": "7c018953-ae80-4d20-890b-0ed54b8bbd6c",
+  "PhoneNumber": "432132452",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-10-29T06:47:21.646Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "6765977d6b3c098f40438343"
+  },
+  "UserName": "yolo",
+  "NormalizedUserName": "YOLO",
+  "Email": "123@gmail.com",
+  "NormalizedEmail": "123@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEIVcE0OUhcwmlpQJEE/tCbvarYPOIygPorAn6CRTLnv9IkICdgj6/jLyzYS0hNj69Q==",
+  "SecurityStamp": "Y552NNJDGHH3YT4AVIOMM7FIHNEOPYXM",
+  "ConcurrencyStamp": "d9c4bcab-c148-4984-8caa-ab004b9b7aae",
+  "PhoneNumber": "123456789",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-12-20T16:12:45.310Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "671d1cd942077648685cae29"
+  },
+  "UserName": "aaaaa",
+  "NormalizedUserName": "AAAAA",
+  "Email": "a02@gmail.com",
+  "NormalizedEmail": "A02@GMAIL.COM",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEDuqS93JyjB9jDgg2sf0oImJgFnxEMxs0LRob7MXkAIEMHScdqUaFsKjP3vibYYxeg==",
+  "SecurityStamp": "SSJCCWSEXEXX7NKCPTNDUW7O2T245EBK",
+  "ConcurrencyStamp": "4d8a43ed-d053-421f-8eb3-5c0b1298cf84",
+  "PhoneNumber": "123123123",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-10-26T16:46:17.716Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+},
+{
+  "_id": {
+    "$oid": "675c1f4d3012dd365f0c64d9"
+  },
+  "UserName": "jack102hn",
+  "NormalizedUserName": "JACK102HN",
+  "Email": "3120411127@sgu.edu.vn",
+  "NormalizedEmail": "3120411127@SGU.EDU.VN",
+  "EmailConfirmed": false,
+  "PasswordHash": "AQAAAAIAAYagAAAAEO6iStNtJy51a2qTz/+sHSQAq57GbCciJ2LCSHAAjRSDZ0sHFh5RorwKphgGusq5ig==",
+  "SecurityStamp": "2C5WN4B7HQGN7SXI2AGAVVZRVJUZNYEY",
+  "ConcurrencyStamp": "50e98e70-5f0c-4daa-afe8-dfbf43dce944",
+  "PhoneNumber": "90206909",
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Version": 1,
+  "CreatedOn": {
+    "$date": "2024-12-13T11:49:33.125Z"
+  },
+  "Claims": [],
+  "Roles": [
+    {
+      "$oid": "671cec652167addca73399b3"
+    }
+  ],
+  "Logins": [],
+  "Tokens": []
+}]
