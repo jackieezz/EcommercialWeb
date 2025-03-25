@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4177F660-69D4-4EE3-ACED-95F8BCA286B8}|Solution Items{4177F660-69D4-4EE3-ACED-95F8BCA286B8}|C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4177F660-69D4-4EE3-ACED-95F8BCA286B8}|Solution Items{4177F660-69D4-4EE3-ACED-95F8BCA286B8}|solutionrelative:Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|c:\\users\\asus\\desktop\\ecommercialwebsite c#\\ecommercewebsite\\ecommercewebsite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|solutionrelative:ecommercewebsite\\ecommercewebsite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|c:\\users\\asus\\desktop\\ecommercialwebsite c#\\ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2AE24D42-CAEB-48C4-8B4F-323525217358}|ECommerceWebsite\\ECommerceWebsite.csproj|solutionrelative:ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T16:17:44.973Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -51,7 +46,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile.txt",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Dockerfile.txt",
+              "RelativeDocumentMoniker": "Dockerfile.txt",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Dockerfile.txt",
+              "RelativeToolTip": "Dockerfile.txt",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-24T09:07:50.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ECommerceWebsite.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\ECommerceWebsite.csproj",
+              "RelativeDocumentMoniker": "ECommerceWebsite\\ECommerceWebsite.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\ECommerceWebsite.csproj",
+              "RelativeToolTip": "ECommerceWebsite\\ECommerceWebsite.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T08:57:15.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ECommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T16:17:44.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\ECommerceWebsite\\appsettings.json",
               "RelativeDocumentMoniker": "ECommerceWebsite\\appsettings.json",
@@ -61,21 +95,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-19T03:41:07.554Z",
               "EditorCaption": ""
-<<<<<<< HEAD
-=======
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Persistence.csproj",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Persistence\\Persistence.csproj",
-              "RelativeDocumentMoniker": "Persistence\\Persistence.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EcommercialWebsite c#\\Persistence\\Persistence.csproj",
-              "RelativeToolTip": "Persistence\\Persistence.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-19T03:40:39.959Z"
->>>>>>> 72fa718 (init Ecommercial)
             }
           ]
         }
