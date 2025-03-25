@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  ecommerce-website:
+    build: .
+    container_name: ecommerce
+    depends_on:
+      - mongodb
+    environment:
+      ConnectionStrings__DbConnection: "mongodb://mongodb:27017/EcommericalDatabased"
+    ports:
+      - "8081:8080"
+
+volumes:
+  mongodb_data:
